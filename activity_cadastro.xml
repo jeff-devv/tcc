@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F4F7">
+
+    <LinearLayout android:id="@+id/main_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_safe"
+        android:layout_marginBottom="20dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro do Responsável"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_escuro"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp" />
+
+        <EditText android:id="@+id/edt_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome completo"
+        android:padding="14dp"
+        android:backgroundTint="#0D4D92"
+        android:layout_marginBottom="16dp" />
+
+        <EditText android:id="@+id/edt_Cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF"
+        android:inputType="numberDecimal"
+        android:padding="14dp"
+        android:backgroundTint="#0D4D92"
+        android:layout_marginBottom="16dp" />
+
+        <EditText android:id="@+id/edt_Telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/edt_Endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço"
+            android:padding="14dp"
+            android:backgroundTint="#0D4D92"
+            android:layout_marginBottom="16dp" />
+
+        <EditText android:id="@+id/edt_Escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escola"
+            android:padding="14dp"
+            android:backgroundTint="#0D4D92"
+            android:layout_marginBottom="16dp" />
+
+        <EditText android:id="@+id/edt_Qtd_Aluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantos alunos"
+            android:padding="14dp"
+            android:backgroundTint="#0D4D92"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para o login:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/azul_escuro"/>
+
+        <EditText android:id="@+id/edt_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:padding="14dp"
+            android:backgroundTint="#0D4D92"
+            android:layout_marginBottom="25dp" />
+
+        <EditText android:id="@+id/edt_Senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:backgroundTint="#0D4D92"
+            android:layout_marginBottom="25dp" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CADASTRAR"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="@color/azul_principal"
+            app:cornerRadius="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login?"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
