@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olá,  Seja Bem-Vindo"
+            android:layout_marginTop="50dp"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnAreaMotoristas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motoristas"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnAreaResponsaveis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responsáveis"/>
+
+    </LinearLayout>
+
+</ScrollView>

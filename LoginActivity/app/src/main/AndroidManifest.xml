@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+
+    <!-- PERMISSOES -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.LoginActivity">
+
+        <!-- TELA INICIAL (Apenas esta tem o LAUNCHER) -->
+        <activity
+            android:name=".Inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".cadastro_motorista" android:exported="false" />
+        <activity android:name=".NotificacoesMotoristaActivity" android:exported="false" />
+        <activity android:name=".PerfilMotoristaActivity" android:exported="false" />
+        <activity android:name=".RotaDiaActivity" android:exported="false" />
+        <activity android:name=".RegistroSaidaActivity" android:exported="false" />
+        <activity android:name=".RegistroEntradaActivity" android:exported="false" />
+        <activity android:name=".ReconhecimentoFacialActivity" android:exported="false" />
+        <activity android:name=".HomeMotoristaActivity" android:exported="false" />
+        <activity android:name=".ListaAlunosActivity" android:exported="false" />
+        <activity android:name=".LoginMotoristaActivity" android:exported="false" />
+        <activity android:name=".NotificacoesActivity" android:exported="false" />
+        <activity android:name=".HistoricoActivity" android:exported="false" />
+        <activity android:name=".EscolhaMotoristaActivity" android:exported="false" />
+        <activity android:name=".PerfilActivity" android:exported="false" />
+        <activity android:name=".ConfirmacaoFacialActivity" android:exported="false" />
+        <activity android:name=".PagamentoActivity" android:exported="false" />
+        <activity android:name=".RastreamentoActivity" android:exported="false" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".CadastroActivity" android:exported="false" />
+
+        <!-- MainActivity alterada para secundária -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:padding="16dp"
+
+    android:background="#F5F7FA">
+
+
+    <!-- ===================================================== -->
+    <!-- TOPO -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical"
+
+        android:layout_marginBottom="16dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:text="Reconhecimento Facial"
+
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#222222"/>
+
+
+        <Button
+            android:id="@+id/btn_voltar_home"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Voltar"/>
+
+    </LinearLayout>
+
+
+    <!-- ===================================================== -->
+    <!-- CÂMERA -->
+    <!-- ===================================================== -->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+
+        <androidx.camera.view.PreviewView
+
+            android:id="@+id/previewView"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="visible"
+
+            android:layout_margin="20dp"
+
+            app:implementationMode="compatible"
+
+            app:scaleType="fillCenter"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- ===================================================== -->
+    <!-- ALUNO RECONHECIDO -->
+    <!-- ===================================================== -->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:padding="16dp">
+
+
+            <!-- FOTO DO ALUNO -->
+
+            <ImageView
+
+                android:id="@+id/imgAluno"
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:src="@drawable/aluno"
+
+                android:scaleType="centerCrop"
+
+                android:contentDescription="Foto do aluno"/>
+
+
+            <!-- INFORMAÇÕES -->
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:orientation="vertical"
+
+                android:layout_marginStart="12dp">
+
+
+                <TextView
+
+                    android:id="@+id/txtNomeAluno"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Nenhum aluno reconhecido ainda"
+
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="#222222"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtTurmaAluno"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="4dp"
+
+                    android:text=""
+
+                    android:textSize="15sp"
+
+                    android:textColor="#555555"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtStatusReconhecimento"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="6dp"
+
+                    android:text="Câmera iniciando..."
+
+                    android:textColor="#666666"
+
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- ===================================================== -->
+    <!-- CAPTURAR ROSTO -->
+    <!-- ===================================================== -->
+
+    <Button
+
+        android:id="@+id/btnCapturar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Capturar Rosto"
+
+        android:textSize="16sp"/>
+
+
+    <!-- ===================================================== -->
+    <!-- CONFIRMAR ENTRADA -->
+    <!-- ===================================================== -->
+
+    <Button
+
+        android:id="@+id/btnConfirmarEntrada"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:text="Confirmar Entrada"
+
+        android:textSize="16sp"/>
+
+
+    <!-- ===================================================== -->
+    <!-- CONFIRMAR SAÍDA -->
+    <!-- ===================================================== -->
+
+    <Button
+
+        android:id="@+id/btnConfirmarSaida"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:text="Confirmar Saída"
+
+        android:textSize="16sp"/>
+
+</LinearLayout>
